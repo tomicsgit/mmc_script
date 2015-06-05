@@ -24,7 +24,7 @@ run() {
 	fi
 
 	cloneorupdate "${CWD}/Core" "git@git.aoesupport.com:libraries/typo3/typo3_core" "aoe/TYPO3_4-6/4-6-18"
-	cloneorupdate "${CWD}/t3/typo3conf/ext/phpunit" "git://git.typo3.org/TYPO3v4/Extensions/phpunit.git" "3.7.22"
+	cloneorupdate "${CWD}/t3/typo3conf/ext/phpunit" "git://git.typo3.org/TYPO3CMS/Extensions/phpunit.git" "3.7.22"
 
 	cd t3;
 	[ ! -e typo3_src ] && ln -s ../Core typo3_src
