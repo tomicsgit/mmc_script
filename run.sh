@@ -23,7 +23,7 @@ run() {
 		PHPUNIT=phpunit
 	fi
 
-	cloneorupdate "${CWD}/Core" "git@git.aoesupport.com:libraries/typo3/typo3_core" "aoe/TYPO3_4-6/4-6-18"
+	cloneorupdate "${CWD}/Core" "git@git.aoesupport.com:libraries/typo3/typo3_core" "${2}"
 	cloneorupdate "${CWD}/t3/typo3conf/ext/phpunit" "git://git.typo3.org/TYPO3CMS/Extensions/phpunit.git" "e2617972c661f4f406de5a45602eae6bb7abe4b4"
 
 	cd t3;
